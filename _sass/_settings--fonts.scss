@@ -1,0 +1,54 @@
+/**
+ * Check Bootstrap 3 Documentation for further
+ * explanation of some vasriables used below
+ * http://getbootstrap.com/customize/#less-variables
+ *
+ * keep in mind that all variables set to null are going to
+ * be set further by bootstrap defaults
+ */
+
+// -----------------------------------------------------------------------------
+// font-import
+// -----------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+// -----------------------------------------------------------------------------
+// font-colors
+// -----------------------------------------------------------------------------
+
+$text-color:                  $color--text-primary;
+$link-color:                  $color--text-primary;
+
+// -----------------------------------------------------------------------------
+// fonts-families
+// -----------------------------------------------------------------------------
+
+$primary-font:                'Source Sans Pro', sans-serif;
+$headings-font-family:        $primary-font;
+
+$font-family-sans-serif:      $primary-font;
+$font-family-serif:           null;
+$font-family-monospace:       null;
+
+$font-family-base:            $primary-font;
+
+$font-size-base:              14px;
+$font-size-slightly-large:    ceil($font-size-base*1.125);
+$font-size-large:             ceil($font-size-base*1.25);
+$font-size-small:             ceil($font-size-base*0.85);
+
+// -----------------------------------------------------------------------------
+// font-weight
+// -----------------------------------------------------------------------------
+
+$font-weight-regular:           400;
+$font-weight-bold:              600;
+
+// -----------------------------------------------------------------------------
+// headings
+// -----------------------------------------------------------------------------
+
+$headings-font-family:        null;
+$headings-font-weight:        $font-weight-bold;
+$headings-color:              $black;

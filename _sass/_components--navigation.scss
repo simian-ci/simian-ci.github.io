@@ -1,0 +1,29 @@
+.navbar {
+  @include material-layer(1);
+
+  &-brand {
+    padding: 0px;
+
+    img {
+      height: 100%;
+      width: auto;
+      padding: $half-pad;
+    }
+  }
+
+  &-nav {
+    font-size: $size--font-navigation;
+
+    @media #{$from-small-resolutions} {
+      li > a {
+        padding-top: 26px;
+        padding-bottom: 24px;
+      }
+
+      & &-button {
+        padding-top: $pad + 3px;
+        padding-bottom: $pad;
+      }
+    }
+  }
+}

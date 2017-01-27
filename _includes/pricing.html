@@ -1,0 +1,31 @@
+<section class="pricing-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">{{ page.lead }}</h1>
+        <h4 class="text-center">{{ page.leading-text }}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pricing-panel">
+          <div class="pricing-panel-price">
+            <h1>{{ page.pricing.price }}</h1>
+            <p>{{ page.pricing.sublead-text }}</p>
+          </div>
+          <div class="pricing-panel-features">
+            <ul>
+            {% for feature in page.pricing.features %}
+              <li><span>{{ feature }}</span></li>
+            {% endfor %}
+            </ul>
+          </div>
+          <div class="pricing-panel-footer">
+            <p>{{ page.pricing.billing-text }}</p>
+            <a class="btn btn-primary btn-lg btn-block" href="{{ page.pricing.url }}">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

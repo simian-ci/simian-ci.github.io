@@ -1,0 +1,10 @@
+%limited-heading {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+%heading-primary {
+  color: $color--accent;
+  margin-top: 0;
+  margin-bottom: $space*3;
+}

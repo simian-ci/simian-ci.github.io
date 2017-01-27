@@ -1,0 +1,30 @@
+---
+title: Simian CI
+timezone: UTC
+url:
+permalink: pretty
+mailchimp:
+  form-url: "//carlows.us15.list-manage.com/subscribe/post?u=e26c0b6d03ac01225d82f97ab&amp;id=8d2e8c313b"
+footer:
+  help:
+  - text: Documentation
+    url: #
+  - text: Blog
+    url: #
+  - text: Email
+    url: #
+  legal:
+  - text: Terms of Service
+    url: #
+  - text: Security Statement
+    url: #
+
+gems:
+  - "jekyll-seo-tag"
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+exclude: ['Gemfile', 'Gemfile.lock']
+---

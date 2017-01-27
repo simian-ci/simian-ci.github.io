@@ -1,0 +1,16 @@
+.cta-form {
+
+  .btn {
+    margin-top: $space + $space-half;
+  }
+
+  @media #{$from-small-resolutions} {
+    .btn {
+      margin-top: 0;
+    }
+
+    .btn-container {
+      padding-left: 0;
+    }
+  }
+}

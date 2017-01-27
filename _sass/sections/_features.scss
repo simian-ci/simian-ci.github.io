@@ -1,0 +1,30 @@
+.features-section {
+  padding: $pad*6 0;
+  padding-bottom: $pad*3;
+
+  .lead-text {
+    font-weight: normal;
+  }
+
+  .features-container {
+    margin-top: $space*2;
+  }
+
+  .feature {
+    margin: $space*3 0;
+
+    &-content {
+      h4 {
+        max-width: 180px;
+        margin: 0 auto;
+        margin-top: $space-double;
+      }
+
+      p {
+        max-width: 220px;
+        margin: 0 auto;
+        margin-top: $space;
+      }
+    }
+  }
+}

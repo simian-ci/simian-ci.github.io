@@ -1,0 +1,17 @@
+.pricing-section {
+  background-color: $color--background;
+  padding: $pad*8 0;
+
+  h1 {
+    @extend %heading-primary;
+  }
+
+  h4 {
+    @extend %limited-heading;
+    font-weight: 400;
+  }
+
+  .pricing-panel {
+    margin-top: $space*8;
+  }
+}

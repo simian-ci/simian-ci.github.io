@@ -1,0 +1,45 @@
+/*!
+ * Add into this file the variables that are going
+ * to be used by Bootstrap to delivery its grid and
+ * overall styles. A complete list of variables
+ * can be found at: (http://getbootstrap.com/customize/#less-variables)
+ */
+
+// Colors
+
+// Scaffolding
+
+// Grid system
+
+// Components
+
+$padding-large-vertical:              10px;
+$padding-large-horizontal:            15px;
+$border-radius-large:                 1px;
+
+// Navbar
+
+$navbar-height:                       $size--navbar-height;
+$navbar-default-bg:                   $color--primary;
+$navbar-default-color:                $color--text-primary;
+$navbar-default-link-color:           $color--text-secondary;
+$navbar-default-link-active-color:    $color--text-primary;
+$navbar-default-bg:                   transparent;
+$navbar-default-toggle-border-color:  $navbar-default-bg;
+$navbar-default-toggle-hover-bg:      $navbar-default-bg;
+$navbar-margin-bottom:                0px;
+$nav-link-padding:                    10px 30px;
+$navbar-border-radius:                0px;
+
+// Buttons
+
+$btn-primary-bg:                      $color--accent;
+$btn-primary-border:                  $color--accent;
+$btn-font-weight:                     600;
+
+// Forms
+
+$input-border:                        transparent;
+$input-color:                         $color--text-primary;
+$input-color-placeholder:             $color--text-secondary;
+$input-border-focus:                  transparent;

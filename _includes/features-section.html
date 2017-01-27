@@ -1,0 +1,24 @@
+<section class="features-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h4 class="lead-text text-center">{{ page.features-section.title }}</h4>
+      </div>
+    </div>
+    <div class="row">
+      {% for feature in page.features-section.items %}
+        <div class="col-xs-12 col-sm-4 features-container text-center">
+          <div class="feature">
+            <div class="feature-img">
+              <img src="{{ feature.img-url }}" alt="{{ feature.title }}" />
+            </div>
+            <div class="feature-content">
+              <h4>{{ feature.title }}</h4>
+              <p>{{ feature.description }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
