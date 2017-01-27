@@ -1,23 +1,16 @@
 ---
 title: Simian CI
 timezone: UTC
-url:
+url: https://www.simian-ci.com/
 permalink: pretty
 mailchimp:
-  form-url: "//carlows.us15.list-manage.com/subscribe/post?u=e26c0b6d03ac01225d82f97ab&amp;id=8d2e8c313b"
+  form-url: "//simian-ci.us15.list-manage.com/subscribe/post?u=b31cda805c99087d8948c2935&amp;id=da845f9db3"
 footer:
   help:
-  - text: Documentation
-    url: #
   - text: Blog
-    url: #
+    url:
   - text: Email
-    url: #
-  legal:
-  - text: Terms of Service
-    url: #
-  - text: Security Statement
-    url: #
+    url: mailto:support@simian-ci.com
 
 gems:
   - "jekyll-seo-tag"
