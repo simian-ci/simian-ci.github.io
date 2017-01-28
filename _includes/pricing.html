@@ -22,7 +22,7 @@
           </div>
           <div class="pricing-panel-footer">
             <p>{{ page.pricing.billing-text }}</p>
-            <a class="btn btn-primary btn-lg btn-block" href="{{ page.pricing.url }}">Get Started</a>
+            <a class="btn btn-primary btn-lg btn-block" onclick="Intercom('showNewMessage', '{{ page.pricing.intercom-message-text }}')" href="{{ page.pricing.url }}">Get Started</a>
           </div>
         </div>
       </div>
