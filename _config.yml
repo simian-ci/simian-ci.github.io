@@ -13,7 +13,8 @@ footer:
     url: mailto:support@simian-ci.com
 
 gems:
-  - "jekyll-seo-tag"
+  - jekyll-seo-tag
+  - jekyll-autoprefixer
 
 sass:
   style: compressed
