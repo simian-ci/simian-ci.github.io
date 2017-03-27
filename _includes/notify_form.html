@@ -1,0 +1,18 @@
+{% assign form = site.data.notify-form %}
+
+{% assign placeholder = form.email_placeholder %}
+{% if include.placeholder %}
+  {% assign placeholder = include.placeholder %}
+{% endif %}
+
+<form class="form-inline notify-form" action="{{ site.mailchimp.form_url }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
+  <div class="col-12 col-md-8 notify-form-item">
+    <label class="sr-only" for="email">Email</label>
+    <input type="text" class="notify-form-input form-control override" id="mce-EMAIL" name="EMAIL" placeholder="{{ placeholder }}">
+  </div>
+  <div class="col-12 col-md-4 notify-form-item">
+    <button type="submit" class="notify-form-button btn btn-primary" name="subscribe">
+      {{ form.button_text }}
+    </button>
+  </div>
+</form>

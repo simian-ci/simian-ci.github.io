@@ -1,0 +1,40 @@
+$color--link:                                       $dusty-gray;
+$color--link-active:                                $tundora;
+$color--navbar-background:                          transparent;
+$color--navbar-inverse-background:                  $romance;
+$size--link-font-weight:                            600;
+$transition--navbar-show:                           all 420ms cubic-bezier(.165, .84, .44, 1);
+$transition--navbar-show:                           all 420ms cubic-bezier(0.17, 0.84, 0.49, 0.9);
+
+.navbar {
+  backface-visibility: hidden;
+  background-color: $color--navbar-background;
+  transform: translateY(-110%);
+  transition: $transition--navbar-show;
+  z-index: z('navbar');
+
+  &-logo {
+    margin: 0;
+  }
+
+  &--show {
+    transform: translateY(0);
+  }
+
+  &--inverse {
+    box-shadow: 0 2px 4px 0 rgba($black, 0.2);
+    background-color: $color--navbar-inverse-background;
+    z-index: z('navbar-inverse');
+  }
+
+  &-link {
+    color: $color--link;
+    cursor: pointer;
+    font-weight: $size--link-font-weight;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color--link-active;
+    }
+  }
+}

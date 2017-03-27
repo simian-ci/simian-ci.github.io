@@ -1,0 +1,108 @@
+{% assign navbar = site.data.navbar %}
+
+<!-- Normal navbar -->
+<nav class="navbar navbar--show fixed-top" id="navbar">
+  <div class="container d-flex align-items-center flex-row hidden-sm-down">
+    <a class="navbar-logo navbar-brand" href="/">
+      {% include simian-logo.html %}
+    </a>
+
+    <ul class="navigation-links nav ml-auto align-items-center">
+      {% for link in navbar.links %}
+        <li class="navbar-item nav-item">
+          <a class="navbar-link nav-link {{ active_class }}" href="{{ link.href }}">
+            {{ link.name }}
+          </a>
+        </li>
+      {% endfor %}
+
+      <li class="nav-item">
+        <a class="navbar-button btn btn-secondary" href="{{ site.mail_to_link }}">
+          {{ navbar.button_text }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="d-flex align-items-center flex-row justify-content-between hidden-md-up">
+    <a class="navbar-logo navbar-brand" href="/">
+      <img src="/images/{{ navbar.logo_mobile }}" class="img-fluid"  alt="Simian Logo">
+    </a>
+
+    {% include simian.html alt = true %}
+
+    {% include menu-toggle.html %}
+  </div>
+</nav>
+
+<!-- Alt navbar -->
+<nav class="navbar navbar--inverse fixed-top" id="navbar-inverse">
+  <div class="container d-flex align-items-center flex-row hidden-sm-down">
+    <a class="navbar-logo navbar-brand" href="/">
+      {% include simian-logo.html %}
+    </a>
+
+    <ul class="navigation-links nav ml-auto align-items-center">
+      {% for link in navbar.links %}
+
+        {% assign active_class = "" %}
+        {% if forloop.first %}
+          {% assign active_class = "navbar-link--active" %}
+        {% endif %}
+
+        <li class="navbar-item nav-item">
+          <a class="navbar-link nav-link {{ active_class }}" href="{{ link.href }}">
+            {{ link.name }}
+          </a>
+        </li>
+
+      {% endfor %}
+
+      <li class="nav-item">
+        <a class="navbar-button btn btn-secondary" href="{{ site.mail_to_link }}">
+          {{ navbar.button_text }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="d-flex align-items-center flex-row justify-content-between hidden-md-up">
+    <a class="navbar-logo navbar-brand" href="/">
+      <img src="/images/{{ navbar.logo_mobile }}" class="img-fluid"  alt="Simian Logo">
+    </a>
+
+    {% include simian.html alt = true %}
+
+    {% include menu-toggle.html %}
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu hidden-md-up" id="mobile-menu">
+  <header class="mobile-menu-header d-flex align-items-center flex-row justify-content-between">
+    <!-- Keeping navbar classes so it's aligned with navbar logo -->
+    <a class="navbar-logo navbar-brand" href="/">
+      <img src="/images/{{ navbar.logo_outline }}" class="img-fluid"  alt="Simian Logo">
+    </a>
+
+    {% include menu-toggle.html inverse = true %}
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <ul class="mobile-menu-links list-unstyled d-flex flex-column align-items-center">
+          {% for link in navbar.links %}
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link {{ active_class }}" href="{{ link.href }}">
+                {{ link.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</nav>

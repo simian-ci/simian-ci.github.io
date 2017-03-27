@@ -1,37 +1,13 @@
-$size--font-footer:         1.4rem;
+.footer {
+  background-color: $color--footer-background;
+  height: $size--footer-height;
+  line-height: $size--footer-height;
 
-footer {
-  text-align: center;
+  &-list-item:not(:first-child) {
+    margin-left: $spacer * 2;
 
-  @media #{$from-small-resolutions} {
-    text-align: left;
-  }
-}
-
-.footer-bar {
-  height: 2px;
-  width: 100%;
-  max-width: 220px;
-  margin: $space-double auto;
-  background-color: $iron;
-
-  @media #{$from-small-resolutions} {
-    margin: $space-double 0;
-  }
-}
-
-.footer-heading {
-  color: $color--text-secondary;
-  margin: $space + $space-half 0;
-  font-size: $size--font-footer;
-}
-
-.footer-links {
-  p {
-    margin-bottom: 0;
-  }
-
-  a {
-    font-size: $size--font-footer;
+    @include media-breakpoint-down(sm) {
+      margin-left: $spacer * 1.5;
+    }
   }
 }

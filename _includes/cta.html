@@ -1,0 +1,15 @@
+{% assign section = site.data.cta %}
+
+<section class="cta site-section" id="cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+
+        <h2 class="cta-title text-center">{{ section.title }}</h2>
+
+        {% include notify_form.html placeholder = "Email Address" %}
+
+      </div>
+    </div>
+  </div>
+</section>

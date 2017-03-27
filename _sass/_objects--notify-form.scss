@@ -1,0 +1,35 @@
+$size--form-max-width:                           485px;
+
+.notify-form {
+  margin: 0 auto;
+  max-width: $size--form-max-width;
+
+  &-button {
+    width: 100%;
+  }
+
+  &-input  {
+    font-family: $primary-font;
+
+    &.override {
+      // To override form control width: auto
+      width: 100%;
+    }
+  }
+
+  &-button {
+    margin-top: $spacer;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+
+    &-button {
+      margin: 0;
+    }
+
+    &-item {
+      padding-left: 0;
+    }
+  }
+}

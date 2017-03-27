@@ -1,0 +1,12 @@
+.mobile-menu {
+  left: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &-header {
+    height:  $size--navbar-height;
+    padding: $navbar-padding-y*.5 $navbar-padding-x;
+  }
+}

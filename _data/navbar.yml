@@ -1,0 +1,13 @@
+logo: logo_simianci.svg
+logo_outline: logo_simianci_monkey_outline.svg
+logo_mobile: logo_simianci_monkey.svg
+button_text: Email Us
+links:
+  - href: "/"
+    name: Home
+
+  - href: "#about-us"
+    name: About Us
+
+  - href: "/pricing"
+    name: Pricing

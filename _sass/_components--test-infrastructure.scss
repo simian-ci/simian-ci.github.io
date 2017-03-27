@@ -1,0 +1,21 @@
+.test-infrastructure {
+  &-text {
+    font-size: $size--paragraph-font;
+  }
+
+  &-image {
+    margin-bottom: $spacer*2;
+  }
+
+  @include media-breakpoint-up(md) {
+    &-image {
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &-content {
+      margin-left: $spacer*2;
+    }
+  }
+}
