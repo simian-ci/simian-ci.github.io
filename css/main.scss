@@ -1,55 +1,8 @@
 ---
 ---
 
-/*--------------------------------------------------------------
-# Variables
---------------------------------------------------------------*/
+/**
+ * Bootstrap and settings
+ */
 
-@import "variables--site";
-
-/*--------------------------------------------------------------
-# Bootstrap and settings
---------------------------------------------------------------*/
-
-@import "settings--palette";
-@import "settings--fonts";
-@import "settings--bootstrap";
-@import "bootstrap-custom";
-@import "settings--defaults";
-
-/*--------------------------------------------------------------
-# Tools
---------------------------------------------------------------*/
-
-@import "tools--mixins";
-@import "tools--font-size-maps";
-@import "tools--helper-classes";
-
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-
-@import "layouts--global";
-
-/*--------------------------------------------------------------
-# Elements & objects
---------------------------------------------------------------*/
-
-@import "objects--default-elements";
-@import "objects--buttons";
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-
-@import "components--navigation";
-@import "components--listers";
-@import "components--cta-form";
-@import "components--footer";
-@import "components--pricing-panel";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-
-@import "sections/sections";
+@import "custom--bootstrap";
