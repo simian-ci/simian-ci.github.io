@@ -1,0 +1,17 @@
+$size--input-width:                           305px;
+
+.notify-form {
+  &-input {
+    width: $size--input-width;
+  }
+
+  @include media-breakpoint-down(md) {
+    &-button {
+      margin-top: $spacer;
+    }
+
+    &-button, &-input {
+      width: 100%;
+    }
+  }
+}

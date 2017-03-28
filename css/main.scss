@@ -2,21 +2,35 @@
 ---
 
 /**
- * Settings and Bootstrap
+ * Settings (order matters)
  */
 
 @import "settings--palette";
-@import "settings--bootstrap";
-@import "custom--bootstrap";
+@import "settings--fonts";
+@import "settings--defaults";
 
 /**
- * Components
+ * Bootstrap
+ */
+
+@import "bootstrap--custom";
+
+/**
+ * Objects (sorted alphabetically)
+ */
+
+@import "objects--buttons";
+@import "objects--notify-form";
+
+/**
+ * Components (sorted alphabetically)
  */
 
 @import "components--footer";
 
 /**
- * Layouts
+ * Layouts (sorted alphabetically)
  */
 
+@import "layouts--contact";
 @import 'layouts--global';
