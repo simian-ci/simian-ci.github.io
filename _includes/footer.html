@@ -1,0 +1,29 @@
+{% assign section = site.data.footer %}
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-auto">
+        <img class="footer-logo img-fluid" src="/images/{{ section.logo }}" alt="Simian CI logo">
+      </div>
+
+      <div class="col">
+        <ul class="nav justify-content-end">
+          {% for link in section.links %}
+          <li class="footer-list-item nav-item">
+            <a class="footer-link nav-link" href="{{ link.href }}">
+              {% if link.icon %}
+                <img class="img-fluid" src="/images/{{ link.image }}" alt="{{ link.name }}">
+              {% else %}
+                {{ link.name }}
+              {% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>

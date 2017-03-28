@@ -2,7 +2,21 @@
 ---
 
 /**
- * Bootstrap and settings
+ * Settings and Bootstrap
  */
 
+@import "settings--palette";
+@import "settings--bootstrap";
 @import "custom--bootstrap";
+
+/**
+ * Components
+ */
+
+@import "components--footer";
+
+/**
+ * Layouts
+ */
+
+@import 'layouts--global';

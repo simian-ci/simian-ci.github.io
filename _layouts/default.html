@@ -3,9 +3,13 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="site">
 
-    {{ content }}
+    <main class="site-content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
 
     {% include footer-scripts.html %}
 

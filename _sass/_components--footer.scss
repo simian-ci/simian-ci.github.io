@@ -1,0 +1,15 @@
+$size--footer-height:                         80px;
+
+.footer {
+  background-color: $color--footer-background;
+  height: $size--footer-height;
+  line-height: $size--footer-height;
+
+  &-list-item:not(:first-child) {
+    margin-left: $spacer * 2;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: $spacer * 1.5;
+    }
+  }
+}

@@ -1,4 +1,4 @@
----
+company_name: Simian, Inc
 title: Continuous resilience testing for your application
 timezone: UTC
 url: https://www.simian-ci.com/
@@ -21,4 +21,3 @@ sass:
   sass_dir: _sass
 
 exclude: ['Gemfile', 'Gemfile.lock']
----
