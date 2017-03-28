@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+}
+
+/*
+ * The site layout is handled as a group of flex rows.
+ */
+.site {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ * This makes the main content to expand as needed.
+ */
+.site-content {
+  flex: 1;
+}
