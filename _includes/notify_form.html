@@ -1,0 +1,18 @@
+{% assign form = site.data.notify-form %}
+
+<form class="notify-form">
+  <div class="row text-center">
+
+    <div class="col-12 col-lg">
+      <label class="sr-only" for="email">Email</label>
+      <input type="text" class="notify-form-input form-control" id="email" placeholder="{{ form.email_placeholder }}">
+    </div>
+
+    <div class="col-12 col-lg ">
+      <button type="submit" class="notify-form-button btn btn-primary">
+        {{ form.button_text }}
+      </button>
+    </div>
+
+  </div>
+</form>

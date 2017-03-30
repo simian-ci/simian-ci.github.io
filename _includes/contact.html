@@ -1,0 +1,23 @@
+{% assign section = site.data.contact-section %}
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+
+        <h2 class="contact-title font-weight-bold text-center">
+          {{ section.title }}
+        </h2>
+
+        <p class="contact-text text-center">
+          {{ section.text }}
+        </p>
+
+        <div class="d-flex justify-content-center">
+          {% include notify_form.html center=true %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
