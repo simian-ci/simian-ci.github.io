@@ -20,4 +20,4 @@ sass:
   style: compressed
   sass_dir: _sass
 
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: [Gemfile, Gemfile.lock, README.md, gulpfile.js, package.json, node_modules]
