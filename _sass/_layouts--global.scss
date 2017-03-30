@@ -16,3 +16,7 @@ html, body {
 .site-content {
   flex: 1;
 }
+
+.site-section:not(:first-child) {
+  margin-top: $spacer*6;
+}
