@@ -1,0 +1,23 @@
+{% assign section = site.data.description %}
+
+<section class="description site-section" id="description">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <h2 class="description-title text-center">{{ section.title }}</h2>
+      </div>
+    </div>
+
+    <div class="row text-center text-lg-left">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-5 offset-lg-1">
+        <p class="description-text description-text--left">{{ section.texts[0] }}</p>
+      </div>
+      <div class="col-12 col-md-8 offset-md-2 col-lg-5 offset-lg-0">
+        <p class="description-text description-text--right">{{ section.texts[1] }}</p>
+        {% include technologies-list.html %}
+      </div>
+    </div>
+
+  </div>
+</section>

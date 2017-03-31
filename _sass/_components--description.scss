@@ -1,0 +1,21 @@
+.description {
+  &-text {
+    margin-bottom: $spacer*.25;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &-title {
+      margin-bottom: $spacer*3;
+    }
+
+    &-text {
+      &--left {
+        margin-right: $spacer;
+      }
+
+      &--right {
+        margin-left: $spacer;
+      }
+    }
+  }
+}

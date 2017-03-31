@@ -1,0 +1,18 @@
+$size--technology-small:                         100% / 3;
+
+.technologies {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @include media-breakpoint-up(md) {
+    justify-content: space-around;
+  }
+}
+
+.technology {
+  width: $size--technology-small;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+  }
+}
