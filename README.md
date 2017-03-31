@@ -2,6 +2,10 @@
 
 This is the landing page for Simian CI.
 
+## Staging Site! :rocket:
+
+Access the staging site [here](https://simian-ci.firebaseapp.com/)
+
 ## How to use
 
 1. Make sure you have bundler installed (gem install bundler)

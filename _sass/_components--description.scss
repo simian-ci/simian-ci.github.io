@@ -1,6 +1,7 @@
 .description {
   &-text {
-    margin-bottom: $spacer*.25;
+    margin-bottom: $spacer*.75;
+    font-size: $size--paragraph-font;
   }
 
   @include media-breakpoint-up(lg) {
@@ -9,12 +10,14 @@
     }
 
     &-text {
+      margin-bottom: $spacer*.25;
+
       &--left {
-        margin-right: $spacer;
+        margin-right: $spacer*.5;
       }
 
       &--right {
-        margin-left: $spacer;
+        margin-left: $spacer*.5;
       }
     }
   }
