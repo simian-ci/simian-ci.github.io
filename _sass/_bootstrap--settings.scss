@@ -40,7 +40,9 @@ $link-hover-color:                        lighten($link-color, 10%);
  */
 
 $headings-color:                          $tundora;
-$font-size-h2:                            28px;
+$font-size-h2:                            $font-size-base*1.75;
+$headings-font-weight:                    bold;
+$headings-margin-bottom:                  $spacer*1.5;
 
 /**
  * Navs

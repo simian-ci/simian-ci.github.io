@@ -1,20 +1,12 @@
 .contact {
   margin-bottom: $spacer*8;
 
-  &-title {
-    margin-bottom: $spacer*2;
-  }
-
   &-text {
     font-size: $font-size-lg;
     margin-bottom: $spacer*3.5;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     margin-bottom: $spacer*3;
-
-    &-title {
-      margin-bottom: $spacer*1.5;
-    }
   }
 }
