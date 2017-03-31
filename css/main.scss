@@ -10,7 +10,7 @@
 @import "settings--defaults";
 
 /**
- * Bootstrap
+ * Bootstrap (order matters)
  */
 
 @import "bootstrap--custom";
@@ -27,10 +27,16 @@
  */
 
 @import "components--footer";
+@import "components--quote";
 
 /**
  * Layouts (sorted alphabetically)
  */
 
-@import "layouts--contact";
 @import 'layouts--global';
+
+/**
+ * Partials (sorted alphabetically)
+ */
+
+@import "partials--contact";
