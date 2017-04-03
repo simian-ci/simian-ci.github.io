@@ -15,9 +15,8 @@ html, body {
  */
 .site-content {
   flex: 1;
-  padding: 0 $spacer*.5;
 }
 
-.site-section:not(:first-child) {
-  margin-top: $spacer*6;
+.site-section {
+  padding: $spacer*3 $spacer*.5;
 }

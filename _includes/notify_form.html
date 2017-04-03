@@ -1,11 +1,16 @@
 {% assign form = site.data.notify-form %}
 
+{% assign placeholder = form.email_placeholder %}
+{% if include.placeholder %}
+  {% assign placeholder = include.placeholder %}
+{% endif %}
+
 <form class="notify-form">
   <div class="row text-center">
 
     <div class="col-12 col-lg">
       <label class="sr-only" for="email">Email</label>
-      <input type="text" class="notify-form-input form-control" id="email" placeholder="{{ form.email_placeholder }}">
+      <input type="text" class="notify-form-input form-control" id="email" placeholder="{{ placeholder }}">
     </div>
 
     <div class="col-12 col-lg ">
