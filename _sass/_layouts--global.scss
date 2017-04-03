@@ -15,6 +15,7 @@ html, body {
  */
 .site-content {
   flex: 1;
+  padding: 0 $spacer*.5;
 }
 
 .site-section:not(:first-child) {

@@ -24,9 +24,9 @@ $spacer:                                  1rem;
  * Fonts
  */
 
-$font-family-sans-serif:                    $primary-font;
-$headings-font-family:                      $primary-font;
-$font-size-base:                            1rem;
+$font-family-sans-serif:                  $primary-font;
+$headings-font-family:                    $primary-font;
+$font-size-base:                          1rem;
 
 /**
  * Links
@@ -41,6 +41,7 @@ $link-hover-color:                        lighten($link-color, 10%);
 
 $headings-color:                          $tundora;
 $font-size-h2:                            $font-size-base*1.75;
+$font-size-h3:                            $font-size-base*1.375;
 $headings-font-weight:                    bold;
 $headings-margin-bottom:                  $spacer*1.5;
 
