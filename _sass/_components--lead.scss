@@ -1,0 +1,50 @@
+.lead {
+  background: {
+    image: url('/images/bgn_grid_small.svg');
+    position: center top;
+    repeat: repeat-x;
+  }
+
+  &-container {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  &-svg {
+    visibility: hidden;
+
+    #lead-svg {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--show {
+      visibility: visible;
+    }
+  }
+
+  &-title {
+    color: $shamrock-green;
+    margin: 0;
+  }
+
+  &-subtitle {
+    font-size: $font-size-h3;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-image: url('/images/bgn_grid.svg');
+
+    &-content {
+      justify-content: center;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}

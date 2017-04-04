@@ -1,0 +1,7 @@
+.lead {
+  padding-top: $spacer*6;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
+}

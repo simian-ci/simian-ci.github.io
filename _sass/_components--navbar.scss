@@ -1,6 +1,6 @@
 $color--link:                                       $dusty-gray;
 $color--link-active:                                $tundora;
-$color--navbar-background:                          $white;
+$color--navbar-background:                          transparent;
 $color--navbar-inverse-background:                  $romance;
 $size--link-font-weight:                            600;
 $transition--navbar-show:                           all 420ms cubic-bezier(.165, .84, .44, 1);
@@ -29,10 +29,11 @@ $transition--navbar-show:                           all 420ms cubic-bezier(0.17,
 
   &-link {
     color: $color--link;
+    cursor: pointer;
     font-weight: $size--link-font-weight;
     text-transform: uppercase;
 
-    &--active {
+    &:hover {
       color: $color--link-active;
     }
   }

@@ -1,0 +1,36 @@
+<section class="pricing site-section">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="pricing-title text-center">{{ page.lead }}</h1>
+        <h3 class="pricing-phrase text-center">{{ page.leading-text }}</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4 offset-md-4">
+        <div class="pricing-card">
+          <div class="pricing-card-item">
+            <h1 class="pricing-card-price text-center">{{ page.pricing.price }}</h1>
+            <p class="pricing-card-price-info text-center">{{ page.pricing.sublead-text }}</p>
+          </div>
+          <div class="pricing-card-item">
+            <ul class="price-features">
+            {% for feature in page.pricing.features %}
+              <li class="price-feature-item">
+                <span class="price-feature-text">{{ feature }}</span>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+          <div class="pricing-card-item">
+            <p class="pricing-card-footer-text text-center">{{ page.pricing.billing-text }}</p>
+            <a class="btn btn-primary btn-lg btn-block" href="{{ site.mail_to_link }}">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

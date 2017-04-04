@@ -7,7 +7,6 @@ html, body {
 }
 
 .site-content {
-  margin-top: $size--navbar-height;
   min-height: 100%;
   margin-bottom: -$size--footer-height;
 
@@ -15,6 +14,12 @@ html, body {
     content: "";
     display: block;
     height: $size--footer-height;
+  }
+
+  &--pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
