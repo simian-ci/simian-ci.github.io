@@ -1,0 +1,21 @@
+{% assign section = site.data.test-infrastructure %}
+
+<section class="test-infrastructure site-section" id="test-infrastructure">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-4 offset-lg-2 text-center">
+        <img class="test-infrastructure-image img-fluid"
+          src="/images/{{ section.image }}"
+          srcset="{{ section.image | generate_srcset}}"
+          alt="{{ section.title }}">
+      </div>
+
+      <div class="test-infrastructure-content col-12 col-md-6 col-lg-4 text-center text-md-left d-flex flex-column justify-content-center">
+        <h2 class="test-infrastructure-title">{{ section.title }}</h2>
+        <p class="test-infrastructure-text">{{ section.text }}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
