@@ -13,7 +13,7 @@ Access the staging site [here](https://simian-ci.firebaseapp.com/)
 3. `rbenv rehash`
 4. `yarn install` to install npm dependencies
 5. `jekyll serve --watch` to serve and watch for changes
-6. `yarn run gulp` to purify the css (More on this below)
+6. `yarn run watch` to minify JS, CSS, and images. (_This should be running next to jekyll serve_)
 7. run `jekyll build` when you want to build the site
 
 _Make sure you run `jekyll serve` at least once, as this creates or updates the _site and it's needed to deploy and for some gulp tasks folder_
