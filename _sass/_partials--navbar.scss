@@ -1,0 +1,11 @@
+.navbar {
+  height: $size--navbar-height;
+
+  &-link {
+    margin-left: $spacer*1.5;
+  }
+
+  &-button {
+    margin-left: $spacer*3;
+  }
+}
