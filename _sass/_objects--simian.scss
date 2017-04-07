@@ -1,0 +1,18 @@
+$size--font:                             $font-size-base;
+$size--alt-font:                         $font-size-base*1.25;
+$size--font-weight:                      600;
+
+.simian {
+  color: $gun-powder;
+  font-size: $size--font;
+  font-weight: $size--font-weight;
+  margin: 0;
+
+  &--alt {
+    font-size: $size--alt-font;
+  }
+
+  &-ci {
+    color: $orange-peel;
+  }
+}

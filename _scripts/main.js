@@ -1,6 +1,8 @@
 var SimianCI = {
   init: function() {
     this.featuresSlider(7000);
+    this.nav();
+    this.mobileMenu();
   },
 
   featuresSlider: function(sliderTime) {
@@ -62,6 +64,49 @@ var SimianCI = {
       }
 
       getNextFeature(feature);
+    });
+  },
+
+  nav: function() {
+    var navbar = $('#navbar');
+    var navbarInverse = $('#navbar-inverse');
+    var scrollOffset = 20; // For throttling
+    var mobileMenu = $('#mobile-menu');
+
+    function activateInverseNavbar(inverse) {
+      if (navbarInverse.hasClass('navbar--show') && inverse) {
+        return;
+      }
+      navbar.toggleClass('navbar--show', !inverse);
+      navbarInverse.toggleClass('navbar--show', inverse);
+    }
+
+    $(document).scroll(function(event) {
+      if (mobileMenu.hasClass('mobile-menu--active')) {
+        event.preventDefault();
+        return;
+      }
+
+      var scroll = $(window).scrollTop();
+      activateInverseNavbar(scroll > scrollOffset);
+    });
+  },
+
+  mobileMenu: function() {
+    var menuTriggers = $('.menu-toggle-wrapper');
+    var menuTogglers = $('.menu-toggle');
+    var body = $(document.body);
+    var menu = $('#mobile-menu');
+
+    function toggleMenu() {
+      menuTogglers.toggleClass('menu-toggle--active');
+      menu.toggleClass('mobile-menu--active');
+      // Prevents body from scrolling when menu is active
+      body.toggleClass('modal-open');
+    }
+
+    menuTriggers.on('click', function(event) {
+      toggleMenu();
     });
   },
 

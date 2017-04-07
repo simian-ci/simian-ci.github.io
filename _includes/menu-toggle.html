@@ -1,0 +1,8 @@
+{% assign inverse_class="" %}
+{% if include.inverse %}
+  {% assign inverse_class="menu-toggle--inverse" %}
+{% endif %}
+
+<span class="menu-toggle-wrapper d-flex align-items-center">
+  <span class="menu-toggle {{ inverse_class }}"></span>
+</span>

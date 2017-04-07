@@ -10,6 +10,13 @@
 @import "settings--defaults";
 
 /**
+ * Tools (sorted alphabetically)
+ */
+
+@import "tools--mixins";
+@import "tools--zmap";
+
+/**
  * Bootstrap (order matters)
  */
 
@@ -21,7 +28,9 @@
  */
 
 @import "objects--buttons";
+@import "objects--menu-toggle";
 @import "objects--notify-form";
+@import "objects--simian";
 @import "objects--technologies-list";
 
 /**
@@ -31,8 +40,10 @@
 @import "components--cta";
 @import "components--description";
 @import "components--features";
-@import "components--footer";
+@import "components--mobile-menu";
+@import "components--navbar";
 @import "components--quote";
+@import "components--simian-logo";
 @import "components--test-infrastructure";
 
 /**
@@ -47,3 +58,6 @@
 
 @import "partials--contact";
 @import "partials--cta";
+@import "partials--footer";
+@import "partials--mobile-menu";
+@import "partials--navbar";

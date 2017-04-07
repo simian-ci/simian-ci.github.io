@@ -1,0 +1,6 @@
+@mixin menu-toggle-boilerplate($height, $width, $background-color, $transition) {
+  background-color: $background-color;
+  height: $height;
+  width: $width;
+  transition: $transition;
+}

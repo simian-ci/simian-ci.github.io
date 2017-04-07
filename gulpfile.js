@@ -19,7 +19,7 @@ var paths = {
 
 gulp.task('css', function() {
   return gulp.src(paths.mainCSS)
-    .pipe(purify([paths.html]))
+    .pipe(purify([paths.html, paths.mainJS]))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.css));
 });
