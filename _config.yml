@@ -4,13 +4,9 @@ timezone: UTC
 url: https://www.simian-ci.com/
 permalink: pretty
 mailchimp:
-  form-url: "//simian-ci.us15.list-manage.com/subscribe/post?u=b31cda805c99087d8948c2935&amp;id=da845f9db3"
-footer:
-  help:
-  - text: Blog
-    url:
-  - text: Email
-    url: mailto:support@simian-ci.com
+  # TODO: Should be changed to "production" account URL before deploy
+  form_url: "//firebaseapp.us15.list-manage.com/subscribe/post?u=42fd747e924e3fbbee655c6db&amp;id=2de9403c47"
+mail_to_link: mailto:support@simian-ci.com
 
 gems:
   - jekyll-seo-tag
