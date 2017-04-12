@@ -1,21 +1,20 @@
-$size--form-max-width:                           485px;
+$size--form-width-medium:                        600px;
 $size--item-height:                              45px;
 
 .notify-form {
   margin: 0 auto;
-  max-width: $size--form-max-width;
 
   &-button {
     width: 100%;
   }
 
-  &-input  {
+  &-input, &-select {
     font-family: $primary-font;
+  }
 
-    &.form-control {
-      // To override form control width: auto
-      width: 100%;
-    }
+  &-input.form-control  {
+    // To override form control width: auto
+    width: 100%;
   }
 
   &-select {
@@ -44,6 +43,7 @@ $size--item-height:                              45px;
 
   @include media-breakpoint-up(md) {
     margin: 0;
+    width: $size--form-width-medium;
 
     &-item {
       padding-left: 0;

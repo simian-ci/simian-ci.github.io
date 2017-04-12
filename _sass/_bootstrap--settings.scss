@@ -70,6 +70,7 @@ $btn-transition:                          all .15s ease-in-out;
 $btn-box-shadow:                          transparent;
 $btn-focus-box-shadow:                    transparent;
 $btn-active-box-shadow:                   transparent;
+$btn-padding-x:                           $spacer*.75;
 
 /**
  * Blockquotes (This is the Font section in the _variables.scss bootstrap file)
@@ -99,6 +100,12 @@ $input-color-focus:                       $tundora;
 $input-color-placeholder:                 $dusty-gray;
 $input-border-focus:                      $shamrock-green;
 $custom-select-focus-border-color:        $input-border-focus;
+$custom-select-indicator:                 url(/images/icon_arrow_down.svg);
+$custom-select-bg-size:                   10px 10px;
+$custom-select-sm-font-size:              $font-size-base;
+$custom-select-padding-x:                 $input-padding-x;
+$custom-select-color:                     $input-color-placeholder;
+$custom-select-padding-y:                 $input-padding-y;
 
 /**
  * Misc.

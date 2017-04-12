@@ -1,7 +1,19 @@
 company_name: Simian, Inc
-title: Continuous resilience testing for your application
-timezone: UTC
+
+# Jekyll SEO Tags plugin related stuff
+# Also take in mind SEO Tags plugin genereates the head <title>
+title: Simian CI
+description: Continuous resilience testing for your application
 url: https://www.simian-ci.com/
+type: website
+logo: https://www.simian-ci.com/images/logo_simianci_monkey.png
+logo_alt: Simian CI logo
+social:
+  links:
+    - https://twitter.com/simianhq
+    - https://facebook.com/simianhq
+
+timezone: UTC
 permalink: pretty
 mailchimp:
   form_url: "//simian-ci.us15.list-manage.com/subscribe/post?u=b31cda805c99087d8948c2935&amp;id=da845f9db3"
