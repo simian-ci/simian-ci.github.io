@@ -1,3 +1,26 @@
+$size--secondary-padding-y:                     $spacer * .25;
+$size--secondary-padding-x:                     $spacer * 1.25;
+
 .btn {
-  letter-spacing: 1px;
+  // FIXME: This should be set automaticaly by bootstrap using some variable/setting
+  font-family: $primary-font;
+  cursor: pointer;
+}
+
+.btn-primary {
+  font-size: $font-size-base*1.375;
+
+  &:hover, &:focus {
+    background-color: $color--btn-primary-hover;
+  }
+}
+
+.btn-secondary {
+  padding: $size--secondary-padding-y $size--secondary-padding-x;
+
+  &:hover, &:focus {
+    color: $btn-secondary-bg;
+    background-color: $btn-secondary-color;
+    border-color: transparent;
+  }
 }

@@ -1,0 +1,13 @@
+logo: logo_simianci_grey.svg
+
+links:
+  - name: Blog
+    href: #blog
+
+  - name: Contact Us
+    href: #contact-us
+
+  - name: twitter logo
+    href: #twitter
+    icon: true
+    image: logo_twitter.svg

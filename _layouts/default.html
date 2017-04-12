@@ -1,19 +1,19 @@
----
----
-
 <!DOCTYPE html>
 <html>
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <header>
-      {% include header.html %}
-    </header>
-    <div class="site-container">
+
+  {% include head.html %}
+
+  <body class="site">
+
+    {% include navbar.html %}
+
+    <main class="site-content">
       {{ content }}
-    </div>
+    </main>
+
     {% include footer.html %}
-    {% include site-scripts.html %}
+
+    {% include footer-scripts.html %}
+
   </body>
 </html>

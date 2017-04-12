@@ -1,21 +1,28 @@
-body {
-  font-size: 10px;
+html, body {
+  height: 100%;
 }
 
-input.form-control {
+.site {
+  position: relative;
+}
 
-  &,
-  &:focus,
-  &:active {
-    box-shadow: none;
+.site-content {
+  min-height: 100%;
+  margin-bottom: -$size--footer-height;
+
+  &::after {
+    content: "";
+    display: block;
+    height: $size--footer-height;
+  }
+
+  &--pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.section-containers {
-  padding-right: $pad-double;
-  padding-left: $pad-double;
-}
-
-footer {
-  padding: $pad*3 0;
+.site-section {
+  padding: $spacer*3 $spacer*.5;
 }

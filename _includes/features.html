@@ -1,0 +1,39 @@
+{% assign section = site.data.features %}
+
+<section class="features site-section" id="features">
+  <div class="container">
+    <div class="row">
+      <div class="features-container col-12 col-lg-10 offset-lg-1">
+        <div class="row">
+
+          <div class="col-12 col-md-5 offset-md-1">
+            <ul class="features-list list-unstyled">
+              {% for feature in section.features %}
+                {% assign active_classes = "" %}
+                {% if forloop.first %}
+                  {% assign active_classes = section.active_classes %}
+                {% endif %}
+                <li class="feature {{ active_classes.feature }} text-center text-md-left">
+                  <h3 class="feature-title {{ active_classes.feature-title }}">{{ feature.title }}</h3>
+                  <p class="feature-text {{ active_classes.feature-text }}">{{ feature.text }}</p>
+                  <img class="feature-image img-fluid hidden-md-up" src="/images/{{ feature.image }}" alt="{{ feature.title }}">
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <div class="col-md-6 hidden-sm-down features-images">
+            {% for feature in section.features %}
+              {% assign active_classes = "bno" %}
+              {% if forloop.first %}
+                {% assign active_classes = section.active_classes %}
+              {% endif %}
+              <img class="features-image {{ active_classes.features-image }}" src="/images/{{ feature.image }}" alt="{{ feature.title }}">
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
