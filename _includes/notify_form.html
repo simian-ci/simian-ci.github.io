@@ -5,10 +5,20 @@
   {% assign placeholder = include.placeholder %}
 {% endif %}
 
+{% assign sorted_options = form.select_options | sort %}
+
 <form class="form-inline notify-form" action="{{ site.mailchimp.form_url }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
-  <div class="col-12 col-md-8 notify-form-item">
+  <div class="col-12 col-md-5 notify-form-item">
     <label class="sr-only" for="email">Email</label>
-    <input type="text" class="notify-form-input form-control override" id="mce-EMAIL" name="EMAIL" placeholder="{{ placeholder }}">
+    <input type="text" class="notify-form-input form-control" id="mce-EMAIL" name="EMAIL" placeholder="{{ placeholder }}" required>
+  </div>
+  <div class="col-12 col-md-3 notify-form-item">
+    <label class="sr-only" for="mce-PROVIDER">Provider</label>
+    <select class="notify-form-select form-control custom-select" name="PROVIDER" id="mce-PROVIDER" required>
+      {% for option in sorted_options %}
+        <option value="{{ option }}">{{ option }}</option>
+      {% endfor %}
+    </select>
   </div>
   <div class="col-12 col-md-4 notify-form-item">
     <button type="submit" class="notify-form-button btn btn-primary" name="subscribe">
