@@ -2,7 +2,7 @@ company_name: Simian, Inc
 
 # Jekyll SEO Tags plugin related stuff
 # Also take in mind SEO Tags plugin genereates the head <title>
-title: Simian CI
+title: Continuous resilience testing for your application
 description: Continuous resilience testing for your application
 url: https://www.simian-ci.com/
 type: website
