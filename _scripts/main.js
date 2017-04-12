@@ -172,15 +172,15 @@ var SimianCI = {
 
     // Times are in ms unless stated otherwise
     var options = {
-      timesServerLights:             300,
-      timeBetweenServerLights:       150,
+      timesServerLights:             600,
+      timeBetweenServerLights:       300,
       // Time to restart animation once it finishes
-      timeToRestart:                 500,
-      bulbDuration:                  420,
-      bulbLoops:                     3,
+      timeToRestart:                 1600,
+      bulbDuration:                  840,
+      bulbLoops:                       6,
       // This is not actually time, but frames
-      initialDrawingTime:            72,
-      wiresTime:                     650,
+      initialDrawingTime:            120,
+      wiresTime:                     1000,
     };
 
     var colors = {
@@ -197,7 +197,7 @@ var SimianCI = {
     var turnOffBulb = bulbAnimation.bind(null, { duration: 100, loop: false, opacity: 0 }, { stroke: colors.altSilver });
 
     var animateLights = serverLightsAnimation.bind(null, { delay: serverLightsDelay, duration: options.timesServerLights, fill: colors.monza });
-    var fixLights = serverLightsAnimation.bind(null, { delay: 0, duration: 100, duration: options.timesServerLights, fill: colors.inchWorm });
+    var fixLights = serverLightsAnimation.bind(null, { delay: serverLightsDelay, duration: options.timesServerLights, fill: colors.inchWorm });
 
     var turnWireOn = wiresAnimation.bind(null, { duration: options.wiresTime, fillOpacity: 1, stroke: colors.webOrange, strokeWidth: 2.25 });
     var turnWireOff = wiresAnimation.bind(null, { duration: options.wiresTime, fillOpacity:0, stroke: colors.silver, strokeWidth: 1  });
@@ -212,7 +212,9 @@ var SimianCI = {
       newItem.turnWireOn = turnWireOn.bind(null, newItem.wire);
       newItem.animateLights = animateLights.bind(null, newItem.lights);
       newItem.turnWireOff = turnWireOff.bind(null, newItem.wire);
-      newItem.fixLights = fixLights.bind(null, newItem.lights);
+
+      // To fix lights, do it backwards
+      newItem.fixLights = fixLights.bind(null, newItem.lights.concat().reverse());
 
       return newItem;
     });
@@ -222,15 +224,21 @@ var SimianCI = {
       type: 'delayed',
       animTimingFunction: Vivus.EASE,
       pathTimingFunction: Vivus.EASE_OUT
-    }, function() {
-      // This makes the monkey face elements and server lights visible
-      anime({
-        targets: document.querySelectorAll('.non-regular'),
-        easing: 'easeInOutSine',
-        duration: 75,
-        fillOpacity: 1,
-      }).finished.then(startAnimation);
+    }, function () {
+      requestAnimationFrame(startAnimation)
     });
+
+    // This makes the monkey face elements and server lights visible
+    setTimeout(function () {
+      requestAnimationFrame(function () {
+        anime({
+          targets: document.querySelectorAll('.non-regular'),
+          easing: 'easeInOutSine',
+          duration: 300,
+          fillOpacity: 1,
+        });
+      });
+    }, 300);
 
     function startAnimation() {
       var animationPromise;
@@ -241,7 +249,9 @@ var SimianCI = {
       }
 
       animationPromise.then(function() {
-        setTimeout(startAnimation, options.timeToRestart);
+        setTimeout(function () {
+          requestAnimationFrame(startAnimation);
+        }, options.timeToRestart);
       });
     }
 
@@ -257,7 +267,6 @@ var SimianCI = {
      */
     function animateWholeServer(animationPromise, server) {
       var wire = server.wire;
-      var serverLights = server.lights;
 
       animationPromise = typeof animationPromise === 'undefined' ?
         turnWireOn(wire) : animationPromise.then(server.turnWireOn);
@@ -276,13 +285,17 @@ var SimianCI = {
     }
 
     function getNWire(n) {
-      return document
+      var nodes = document
         .querySelectorAll('#lead-svg .cable_' + n);
+
+      return [].slice.call(nodes);
     }
 
     function getNServerLights(n) {
-      return document
+      var nodes = document
         .querySelectorAll('#lead-svg #server_' + n +' *[fill="#93E10E"]');
+
+      return [].slice.call(nodes);
     }
 
     function serverLightsDelay(el, i) {
