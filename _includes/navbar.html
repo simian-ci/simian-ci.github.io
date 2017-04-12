@@ -95,11 +95,16 @@
         <ul class="mobile-menu-links list-unstyled d-flex flex-column align-items-center">
           {% for link in navbar.links %}
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link {{ active_class }}" href="{{ link.href }}">
+              <a class="mobile-menu-link" href="{{ link.href }}">
                 {{ link.name }}
               </a>
             </li>
           {% endfor %}
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="{{ site.mail_to_link }}">
+              {{ navbar.button_text }}
+            </a>
+          </li>
         </ul>
 
       </div>
