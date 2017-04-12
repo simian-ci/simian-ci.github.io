@@ -37,8 +37,7 @@ gulp.task('images', function() {
     .pipe(imagemin([
       imageminPngquant({
         quality: '75-85'
-      }),
-      imagemin.svgo()
+      })
     ]))
     .pipe(gulp.dest(paths.imagesDest))
 });
@@ -46,7 +45,6 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   gulp.watch(paths.mainCSS, ['css']);
   gulp.watch(paths.mainJS, ['js']);
-  gulp.watch(paths.images, ['images']);
 });
 
-gulp.task('default', ['watch', 'css', 'js', 'images']);
+gulp.task('default', ['watch', 'css', 'js']);

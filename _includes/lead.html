@@ -1,0 +1,45 @@
+{% assign section = site.data.lead %}
+
+<section class="lead site-section" id="lead">
+
+  <div class="row no-gutters hidden-md-down">
+    <div class="col-12">
+      <div class="lead-container">
+
+        <div class="lead-svg">
+          {% include lead-svg.html %}
+        </div>
+
+        <div class="lead-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="lead-title text-center text-lg-left">{{ section.title }}</h1>
+                <p class="lead-subtitle text-center text-lg-left">{{ section.subtitle }}</p>
+                {% include notify_form.html %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container hidden-lg-up">
+    <div class="row">
+      <div class="col-12">
+
+        <h1 class="lead-title text-center text-lg-left">{{ section.title }}</h1>
+        <p class="lead-subtitle text-center text-lg-left">{{ section.subtitle }}</p>
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-2">
+            {% include notify_form.html %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>

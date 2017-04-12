@@ -1,0 +1,48 @@
+$color--accent:                      $shamrock-green;
+
+.pricing {
+  &-title {
+    color: $color--accent;
+  }
+
+  &-phrase {
+    margin-bottom: $spacer*3;
+    font-weight: normal;
+  }
+}
+
+.pricing-card {
+  background-color: $alabaster;
+  box-shadow: 0 1.5px 4px rgba(0,0,0,0.24), 0 1.5px 6px rgba(0,0,0,0.12);
+  padding: $spacer*.5;
+
+  &-price {
+    color: $color--accent;
+    margin-bottom: 0;
+  }
+
+  &-item {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+
+    &:not(:first-child):not(:last-child) {
+      margin-top: $spacer*3;
+      margin-bottom: $spacer*3;
+    }
+  }
+
+  &-footer-text {
+    margin-bottom: $spacer*.25;
+  }
+}
+
+.price-feature {
+  &-item {
+    color: $color--accent;
+  }
+
+  &-text {
+    font-weight: 600;
+    color: $tundora;
+  }
+}

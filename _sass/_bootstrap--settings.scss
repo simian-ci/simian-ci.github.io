@@ -40,6 +40,7 @@ $link-hover-color:                        lighten($link-color, 10%);
  */
 
 $headings-color:                          $tundora;
+$font-size-h1:                            $font-size-base*2.75;
 $font-size-h2:                            $font-size-base*1.75;
 $font-size-h3:                            $font-size-base*1.375;
 $headings-font-weight:                    bold;
@@ -64,7 +65,6 @@ $btn-secondary-bg:                        $white;
 $btn-secondary-border:                    $shamrock-green;
 $btn-secondary-color:                     $shamrock-green;
 
-$btn-padding-x:                           $spacer*2.5;
 $btn-font-weight:                         600;
 $btn-transition:                          all .15s ease-in-out;
 $btn-box-shadow:                          transparent;
@@ -95,13 +95,8 @@ $input-padding-y:                         0;
 $input-padding-y-sm:                      $input-padding-y;
 $input-padding-y-lg:                      $input-padding-y;
 $input-border-color:                      $alto;
-$input-color:                             $dusty-gray;
-
-/**
- * Grid columns
- */
-
-$grid-gutter-width-base:                  15px;
+$input-color-focus:                       $tundora;
+$input-color-placeholder:                 $dusty-gray;
 
 /**
  * Misc.
