@@ -1,4 +1,5 @@
 $size--form-max-width:                           485px;
+$size--item-height:                              45px;
 
 .notify-form {
   margin: 0 auto;
@@ -11,25 +12,49 @@ $size--form-max-width:                           485px;
   &-input  {
     font-family: $primary-font;
 
-    &.override {
+    &.form-control {
       // To override form control width: auto
       width: 100%;
     }
   }
 
-  &-button {
-    margin-top: $spacer;
+  &-select {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &.form-control {
+      // To override form control width: auto
+      width: 100%;
+    }
+  }
+
+  &-select,
+  // Added this selector to override bootstrap default height: auto
+  select.form-control:not([size]):not([multiple]) {
+    height: 100%;
+  }
+
+  &-item {
+    height: $size--item-height;
+
+    &:not(:first-child) {
+      margin-top: $spacer;
+    }
   }
 
   @include media-breakpoint-up(md) {
     margin: 0;
 
-    &-button {
-      margin: 0;
-    }
-
     &-item {
       padding-left: 0;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:not(:first-child) {
+        margin: 0;
+      }
     }
   }
 }

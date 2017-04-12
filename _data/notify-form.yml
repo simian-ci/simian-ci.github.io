@@ -1,2 +1,9 @@
 email_placeholder: Enter your email
+provider_placeholder: Enter your provider
 button_text: Notify me
+select_options:
+  - Azure
+  - AWS
+  - Digital Ocean
+  - Docker
+  - Google Cloud Platform
