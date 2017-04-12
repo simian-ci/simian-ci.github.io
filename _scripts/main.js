@@ -176,24 +176,27 @@ var SimianCI = {
       timeBetweenServerLights:       150,
       // Time to restart animation once it finishes
       timeToRestart:                 500,
+      // Time bulb lasts lit
       bulbDuration:                  420,
+      // How many times will bulb lit before going off
       bulbLoops:                     3,
       // This is not actually time, but frames
       initialDrawingTime:            72,
-      wiresTime:                     650,
+      wiresTime:                     650
     };
 
     var colors = {
-      inchWorm:  '#93E10E',
-      monza:     '#D0011B',
-      webOrange: '#FFA300',
-      silver:    '#C2C2C2',
-      altSilver: '#BCBCBC',
+      inchWorm:    '#93E10E',
+      monza:       '#D0011B',
+      carnation:   '#F15569',
+      webOrange:   '#FFA300',
+      silver:      '#C2C2C2',
+      altSilver:   '#BCBCBC'
     };
 
     // Binding functions with default parameters as this wont change
     var turnOnBulb = bulbAnimation.bind(null, { duration: 100, loop: false, opacity: 1 }, { stroke: colors.monza });
-    var animateBulb = bulbAnimation.bind(null, { duration: options.bulbDuration, loop: options.bulbLoops, opacity: 0.4 }, { stroke: [colors.monza, colors.altSilver] });
+    var animateBulb = bulbAnimation.bind(null, { duration: options.bulbDuration, loop: options.bulbLoops, opacity: 1 }, { stroke: [colors.monza, colors.pinkSalmon] });
     var turnOffBulb = bulbAnimation.bind(null, { duration: 100, loop: false, opacity: 0 }, { stroke: colors.altSilver });
 
     var animateLights = serverLightsAnimation.bind(null, { delay: serverLightsDelay, duration: options.timesServerLights, fill: colors.monza });
@@ -202,6 +205,7 @@ var SimianCI = {
     var turnWireOn = wiresAnimation.bind(null, { duration: options.wiresTime, fillOpacity: 1, stroke: colors.webOrange, strokeWidth: 2.25 });
     var turnWireOff = wiresAnimation.bind(null, { duration: options.wiresTime, fillOpacity:0, stroke: colors.silver, strokeWidth: 1  });
 
+    // We obtain the actual svg elements and bind animation functions with them
     animationItems.map(function(server) {
       var newItem = server;
 
@@ -228,7 +232,7 @@ var SimianCI = {
         targets: document.querySelectorAll('.non-regular'),
         easing: 'easeInOutSine',
         duration: 75,
-        fillOpacity: 1,
+        fillOpacity: 1
       }).finished.then(startAnimation);
     });
 
@@ -302,7 +306,7 @@ var SimianCI = {
         delay: function(el, i) { return i * 50 },
         fillOpacity: params.fillOpacity,
         strokeWidth: params.strokeWidth,
-        stroke: params.stroke,
+        stroke: params.stroke
       }).finished;
     }
 
@@ -324,6 +328,7 @@ var SimianCI = {
         easing: 'bulbEasing',
         duration: params.duration,
         fillOpacity: params.opacity,
+        fill: glassParams.stroke
       }).finished;
 
       if (glassParams) {
