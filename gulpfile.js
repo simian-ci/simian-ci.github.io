@@ -51,3 +51,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['watch', 'css', 'js']);
+gulp.task('build', ['images', 'css', 'js']);

@@ -17,6 +17,7 @@
   },
   "scripts": {
     "watch": "gulp",
-    "images": "gulp images"
+    "images": "gulp images",
+    "build": "gulp build"
   }
 }
