@@ -1,10 +1,10 @@
 features:
   - title: Multiple projects in a same account
-    text: Test multiple projects from different providers in the same account, and have reporting of all your events in one place.
+    text: Check multiple projects from different providers in the same account, and see all your chaos events in one place.
     image: icon_multiple_projects.svg
 
   - title: Supports your platform
-    text:  We support multiple public and private cloud providers, and we are constantly working on adding new ones.
+    text:  We support multiple public and private cloud providers, and we are working on adding new ones.
     image: icon_platform_support.svg
 
   - title: Slack and Zapier integration

@@ -1,4 +1,4 @@
 title: Test your infrastructure
-text: With integrations to different providers we are able to give you the power to schedule chaos scenarios to test each component of your infrastructure, to ensure the reliability of your app under failure conditions.
+text: With integrations to the most popular cloud providers, we are able to inject failure to test each component of your infrastructure to ensure the reliability of your application under chaos conditions.
 image: icon_test_infrastructure.png
 image_name: icon_test_infrastructure

@@ -1,4 +1,4 @@
-title: Fulfill not only your own but your users expectations with solid decisions
+title: Brace yourselves, cloud provider outages are coming
 texts:
-  - "Simian CI is a Continuous integration service for failure simulation. In short, it can be described as: Continuos infrastruture failure injection as a Service. AWS outages has affected big companies like Netflix, Tinder and Amazon in the past but we've learn from them and built a solution for you."
-  - "The goal of Continous Failure injection is to test the resilency of infrastructures, and applications self-healing capabilities. Simian CI have integration with the most popular providers:"
+  - "The goal of Continuous Failure injection is to learn how your application behaves when your infrastructure has outages, and detect errors when your team is on call to fix them."
+  - "Cloud provider outages are out of your control, but now you can be prepared. Simian CI has integration with the most popular cloud providers, and it's easy to get started."
