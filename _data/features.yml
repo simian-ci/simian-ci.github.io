@@ -1,6 +1,6 @@
 features:
-  - title: Multiple projects in a same account
-    text: Check multiple projects from different providers in the same account, and see all your chaos events in one place.
+  - title: Multiple projects in a single account
+    text: Check multiple projects from different providers in one single account, and see all of your chaotic events in one place.
     image: icon_multiple_projects.svg
 
   - title: Supports your platform
