@@ -1,19 +1,24 @@
 - name: Amazon Web Services
   image: logo_aws.png
+  image_name: logo_aws
   link: https://aws.amazon.com/
 
 - name: Google Cloud Platform
   image: logo_google_cloud.png
+  image_name: logo_google_cloud
   link: https://cloud.google.com
 
 - name: Microsoft Azure
   image: logo_azure.png
+  image_name: logo_azure
   link: https://azure.microsoft.com
 
 - name: Digital Ocean
   image: logo_digital_ocean.png
+  image_name: logo_digital_ocean
   link: https://www.digitalocean.com/
 
 - name: Docker
   image: logo_docker.png
+  image_name: logo_docker
   link: https://www.docker.com/

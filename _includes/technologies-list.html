@@ -6,7 +6,7 @@
       <a class="technology-link d-block" href="{{ technology.link }}">
         <img class="img-fluid technology-image"
           src="/images/{{ technology.image }}"
-          srcset="{{ technology.image | generate_srcset}}"
+          srcset="{% include retina.html image = technology.image_name %}"
           alt="{{ technology.name }}">
       </a>
     </li>
