@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 var paths = {
   css: './_site/css/',
   mainCSS: './_site/css/main.css',
+  cssJekyll: './css/',
   html: './_site/**/*.html',
   mainJS: './_scripts/main.js',
   jsDest: './js/',
@@ -21,7 +22,9 @@ gulp.task('css', function() {
   return gulp.src(paths.mainCSS)
     .pipe(purify([paths.html, paths.mainJS]))
     .pipe(cleanCSS())
-    .pipe(gulp.dest(paths.css));
+    .pipe(rename("main.min.css"))
+    .pipe(gulp.dest(paths.css))
+    .pipe(gulp.dest(paths.cssJekyll));
 });
 
 gulp.task('js', function() {
