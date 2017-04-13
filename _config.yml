@@ -4,7 +4,7 @@ company_name: Simian, Inc
 # Also take in mind SEO Tags plugin genereates the head <title>
 title: Continuous resilience testing for your application
 description: Continuous resilience testing for your application
-url: https://www.simian-ci.com/
+url: https://www.simian-ci.com
 type: website
 logo: https://www.simian-ci.com/images/logo_simianci_monkey.png
 logo_alt: Simian CI logo
