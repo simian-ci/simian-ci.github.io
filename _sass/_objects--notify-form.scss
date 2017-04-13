@@ -10,6 +10,7 @@ $size--item-height:                              45px;
 
   &-input, &-select {
     font-family: $primary-font;
+    user-select: none;
   }
 
   &-input.form-control  {

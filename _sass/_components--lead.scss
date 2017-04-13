@@ -1,4 +1,6 @@
 .lead {
+  user-select: none;
+  
   background: {
     image: url('/images/bgn_grid_small.svg');
     position: center top;
