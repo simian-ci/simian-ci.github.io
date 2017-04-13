@@ -1,0 +1,14 @@
+{% assign technologies = site.data.technologies %}
+
+<ul class="technologies list-inline d-flex">
+  {% for technology in technologies %}
+    <li class="technology">
+      <a class="technology-link d-block" href="{{ technology.link }}">
+        <img class="img-fluid technology-image"
+          src="/images/{{ technology.image }}"
+          srcset="{{ technology.image | generate_srcset}}"
+          alt="{{ technology.name }}">
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+<div class="simian-logo">
+  <img src="/images/{{ navbar.logo_mobile }}" class="simian-logo-image img-fluid"  alt="Simian Logo">
+
+  {% unless include.only_logo %}
+    <p class="simian-logo-name">
+      {% include simian.html %}
+    </p>
+  {% endunless %}
+</div>

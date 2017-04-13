@@ -1,0 +1,10 @@
+.simian-logo {
+  display: inline-block;
+  
+  &-name {
+    display: inline-block;
+    left: $spacer*.45;
+    top: $spacer*.2;
+    position: relative;
+  }
+}

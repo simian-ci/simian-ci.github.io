@@ -1,0 +1,8 @@
+{% assign alt_class = ""%}
+{% if include.alt %}
+  {% assign alt_class = "simian--alt" %}
+{% endif %}
+
+<span class="simian {{ alt_class }}">
+  Simian <span class="simian-ci">CI</span>
+</span>

@@ -1,0 +1,22 @@
+{% assign section = site.data.quote %}
+
+<section class="quote site-section" id="quote">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+
+        <blockquote class="quote-blockquote blockquote text-center">
+          <p class="quote-quote">
+            "{{ section.quote }}"
+          </p>
+          <footer class="blockquote-footer">
+            <p class="quote-title">{{ section.title }}</p>
+            <!-- <cite class="quote-title" title="{{ section.title }}"></cite> -->
+            <p class="quote-note">{{ section.note }}</p>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </div>
+</section>

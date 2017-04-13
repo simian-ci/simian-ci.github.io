@@ -1,0 +1,10 @@
+logo: logo_simianci_grey.svg
+
+links:
+  - name: Contact Us
+    href: mailto:support@simian-ci.com
+
+  - name: Twitter
+    href: https://twitter.com/simianhq
+    icon: true
+    image: logo_twitter.svg

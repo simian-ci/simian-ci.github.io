@@ -1,55 +1,65 @@
 ---
 ---
 
-/*--------------------------------------------------------------
-# Variables
---------------------------------------------------------------*/
-
-@import "variables--site";
-
-/*--------------------------------------------------------------
-# Bootstrap and settings
---------------------------------------------------------------*/
+/**
+ * Settings (order matters)
+ */
 
 @import "settings--palette";
 @import "settings--fonts";
-@import "settings--bootstrap";
-@import "bootstrap-custom";
 @import "settings--defaults";
 
-/*--------------------------------------------------------------
-# Tools
---------------------------------------------------------------*/
+/**
+ * Tools (sorted alphabetically)
+ */
 
 @import "tools--mixins";
-@import "tools--font-size-maps";
-@import "tools--helper-classes";
+@import "tools--zmap";
 
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
+/**
+ * Bootstrap (order matters)
+ */
 
-@import "layouts--global";
+@import "bootstrap--custom";
+@import "bootstrap--derivables";
 
-/*--------------------------------------------------------------
-# Elements & objects
---------------------------------------------------------------*/
+/**
+ * Objects (sorted alphabetically)
+ */
 
-@import "objects--default-elements";
 @import "objects--buttons";
+@import "objects--menu-toggle";
+@import "objects--notify-form";
+@import "objects--simian";
+@import "objects--technologies-list";
 
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
+/**
+ * Components (sorted alphabetically)
+ */
 
-@import "components--navigation";
-@import "components--listers";
-@import "components--cta-form";
+@import "components--cta";
+@import "components--description";
+@import "components--features";
 @import "components--footer";
-@import "components--pricing-panel";
+@import "components--mobile-menu";
+@import "components--navbar";
+@import "components--lead";
+@import "components--quote";
+@import "components--simian-logo";
+@import "components--test-infrastructure";
 
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
+/**
+ * Layouts (sorted alphabetically)
+ */
 
-@import "sections/sections";
+@import 'layouts--global';
+
+/**
+ * Partials (sorted alphabetically)
+ */
+
+@import "partials--contact";
+@import "partials--cta";
+@import "partials--mobile-menu";
+@import "partials--navbar";
+@import "partials--lead";

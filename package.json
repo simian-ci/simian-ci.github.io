@@ -1,0 +1,22 @@
+{
+  "name": "simian-ci.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:simian-ci/simian-ci.github.io.git",
+  "author": "Victor Tortolero <victor@hashlabs.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
+    "imagemin-pngquant": "^5.0.0",
+    "purify-css": "^1.1.9"
+  },
+  "scripts": {
+    "watch": "gulp",
+    "images": "gulp images"
+  }
+}

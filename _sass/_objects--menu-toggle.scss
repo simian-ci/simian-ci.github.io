@@ -1,0 +1,51 @@
+$color--toggle-background:                    $gun-powder;
+$color--toggle-inverse:                       $jumbo;
+$size--toggle-height:                         2px;
+$size--toggle-width:                          28px;
+$size--toggle-offset:                         6px;
+$size--toggle-rotation:                       45deg;
+$transition--toggle:                          all .2s ease-in-out;
+
+.menu-toggle-wrapper {
+  cursor: pointer;
+  height: ($size--toggle-height * 3) + ($size--toggle-offset * 2);
+  width: $size--toggle-width;
+}
+
+.menu-toggle {
+  @include menu-toggle-boilerplate($size--toggle-height, $size--toggle-width, $color--toggle-background, $transition--toggle);
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    @include menu-toggle-boilerplate($size--toggle-height, $size--toggle-width, $color--toggle-background, $transition--toggle);
+    content: '';
+    bottom: $size--toggle-offset;
+    position: absolute;
+  }
+
+  &::after {
+    @include menu-toggle-boilerplate($size--toggle-height, $size--toggle-width, $color--toggle-background, $transition--toggle);
+    content: '';
+    top: $size--toggle-offset;
+    position: absolute;
+  }
+
+  &--active {
+    background-color: transparent;
+
+    &::before {
+      transform: translateY($size--toggle-offset) rotate(-$size--toggle-rotation);
+    }
+
+    &::after {
+      transform: translateY(-$size--toggle-offset) rotate($size--toggle-rotation);
+    }
+  }
+
+  &--inverse {
+    &::before, &::after {
+      background-color: $color--toggle-inverse;
+    }
+  }
+}

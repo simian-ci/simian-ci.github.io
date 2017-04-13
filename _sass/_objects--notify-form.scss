@@ -1,0 +1,60 @@
+$size--form-width-medium:                        600px;
+$size--item-height:                              45px;
+
+.notify-form {
+  margin: 0 auto;
+
+  &-button {
+    width: 100%;
+  }
+
+  &-input, &-select {
+    font-family: $primary-font;
+  }
+
+  &-input.form-control  {
+    // To override form control width: auto
+    width: 100%;
+  }
+
+  &-select {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &.form-control {
+      // To override form control width: auto
+      width: 100%;
+    }
+  }
+
+  &-select,
+  // Added this selector to override bootstrap default height: auto
+  select.form-control:not([size]):not([multiple]) {
+    height: 100%;
+  }
+
+  &-item {
+    height: $size--item-height;
+
+    &:not(:first-child) {
+      margin-top: $spacer;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+    width: $size--form-width-medium;
+
+    &-item {
+      padding-left: 0;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:not(:first-child) {
+        margin: 0;
+      }
+    }
+  }
+}

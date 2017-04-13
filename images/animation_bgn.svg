@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="680px" viewBox="0 0 1440 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="680"></rect>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="animation">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="bgn_mask" fill="#FEFEFE" xlink:href="#path-1"></use>
+                <g id="reticula" opacity="0.239085821" mask="url(#mask-2)" stroke="#CCCCCC">
+                    <g transform="translate(-545.000000, -391.197227)">
+                        <path d="M579,399.683354 L1052.7055,132" id="Path-17-Copy-31"></path>
+                        <path d="M572,445.515316 L1197.78604,91" id="Path-17-Copy-3"></path>
+                        <path d="M578,524.027253 L1331.49472,94" id="Path-17-Copy-4"></path>
+                        <path d="M578,562.027253 L1331.49472,132" id="Path-17-Copy-36"></path>
+                        <path d="M578,483.027253 L1331.49472,53" id="Path-17-Copy-32"></path>
+                        <path d="M576.271398,604.288776 L1477.90081,92.4124116" id="Path-17-Copy-5"></path>
+                        <path d="M582,681.971463 L1620.41018,92" id="Path-17-Copy-6"></path>
+                        <path d="M582,721.971463 L1620.41018,132" id="Path-17-Copy-35"></path>
+                        <path d="M585,762.880956 L1760.19512,94" id="Path-17-Copy-7"></path>
+                        <path d="M527,835.880956 L1702.19512,167" id="Path-17-Copy-37"></path>
+                        <path d="M527,917.880956 L1702.19512,249" id="Path-17-Copy-38"></path>
+                        <path d="M520,676.880956 L1695.19512,8" id="Path-17-Copy-34"></path>
+                        <path d="M583.333548,845.712289 L1902.49166,93.8248232" id="Path-17-Copy-8"></path>
+                        <path d="M583,926.471627 L1983.16764,128" id="Path-17-Copy-9"></path>
+                        <path d="M659,923.471627 L2059.16764,125" id="Path-17-Copy-22"></path>
+                        <path d="M588,1006.38689 L2009.17359,196" id="Path-17-Copy-10"></path>
+                        <path d="M588,1046.38689 L2009.17359,236" id="Path-17-Copy-20"></path>
+                        <path d="M646,1054.29361 L2007.18345,277" id="Path-17-Copy-11"></path>
+                        <path d="M653,1090.29361 L2014.18345,313" id="Path-17-Copy-21"></path>
+                        <path d="M838,1026.3541 L2007.21727,357" id="Path-17-Copy-12"></path>
+                        <path d="M838,1066.3541 L2007.21727,397" id="Path-17-Copy-23"></path>
+                        <path d="M978,1026.1402 L2007.23747,438" id="Path-17-Copy-13"></path>
+                        <path d="M978,1065.1402 L2007.23747,477" id="Path-17-Copy-24"></path>
+                        <path d="M1187,989.558878 L2007.69862,520" id="Path-17-Copy-14"></path>
+                        <path d="M1187,1028.55888 L2007.69862,559" id="Path-17-Copy-25"></path>
+                        <path d="M1204,1059.20098 L2006.89456,602" id="Path-17-Copy-15"></path>
+                        <path d="M1204,1098.20098 L2006.89456,641" id="Path-17-Copy-26"></path>
+                        <path d="M588,1494.49309 L2007.66228,683" id="Path-17-Copy-16"></path>
+                        <path d="M588,1533.49309 L2007.66228,722" id="Path-17-Copy-27"></path>
+                        <path d="M1527,1038.06161 L2007.58914,765" id="Path-17-Copy-17"></path>
+                        <path d="M1527,1077.06161 L2007.58914,804" id="Path-17-Copy-28"></path>
+                        <path d="M1752,991.441182 L2006.75909,845" id="Path-17-Copy-18"></path>
+                        <path d="M1752,1030.44118 L2006.75909,884" id="Path-17-Copy-29"></path>
+                        <path d="M1856,1012.54657 L2007.7301,927" id="Path-17-Copy-19"></path>
+                        <path d="M1856,1049.54657 L2007.7301,964" id="Path-17-Copy-30"></path>
+                        <path d="M1534,138 L1988.14107,396.5855" id="Path-16-Copy-21"></path>
+                        <path d="M1393,98 L1986.28308,436.261589" id="Path-16-Copy-3"></path>
+                        <path d="M1395,139 L1988.28308,477.261589" id="Path-16-Copy-22"></path>
+                        <path d="M1250,97 L1984.21713,516.433477" id="Path-16-Copy-4"></path>
+                        <path d="M1250,138 L1984.21713,557.433477" id="Path-16-Copy-29"></path>
+                        <path d="M1102,95 L1991.32613,600.752876" id="Path-16-Copy-20"></path>
+                        <path d="M1102,137 L1991.32613,642.752876" id="Path-16-Copy-28"></path>
+                        <path d="M562,679 L1323.4183,1111.85587" id="Path-16-Copy-5"></path>
+                        <path d="M562,639 L1323.4183,1071.85587" id="Path-16-Copy-34"></path>
+                        <path d="M429,683 L1029.46042,1025.56287" id="Path-16-Copy-16"></path>
+                        <path d="M429,643 L1029.46042,985.562872" id="Path-16-Copy-35"></path>
+                        <path d="M284,683 L1005.31232,1096.36587" id="Path-16-Copy-17"></path>
+                        <path d="M284,640 L1005.31232,1053.36587" id="Path-16-Copy-36"></path>
+                        <path d="M138,683 L960.254684,1151.98594" id="Path-16-Copy-18"></path>
+                        <path d="M138,642 L960.254684,1110.98594" id="Path-16-Copy-37"></path>
+                        <path d="M0,684 L647.503883,1054.21451" id="Path-16-Copy-19"></path>
+                        <path d="M70,684 L717.503883,1054.21451" id="Path-16-Copy-38"></path>
+                        <path d="M958,94 L1993.94366,682.910258" id="Path-16-Copy-6"></path>
+                        <path d="M959,136 L1994.94366,724.910258" id="Path-16-Copy-27"></path>
+                        <path d="M821,97 L1998.94558,768.739206" id="Path-16-Copy-7"></path>
+                        <path d="M821,139 L1998.94558,810.739206" id="Path-16-Copy-26"></path>
+                        <path d="M679,95 L1986.08039,841.787964" id="Path-16-Copy-8"></path>
+                        <path d="M679,137 L1986.08039,883.787964" id="Path-16-Copy-25"></path>
+                        <path d="M532,95 L1985.58071,923.608568" id="Path-16-Copy-9"></path>
+                        <path d="M532,135 L1985.58071,963.608568" id="Path-16-Copy-24"></path>
+                        <path d="M538,260 L1991.58071,1088.60857" id="Path-16-Copy-11"></path>
+                        <path d="M538,219 L1991.58071,1047.60857" id="Path-16-Copy-23"></path>
+                        <path d="M538,341 L1709.29779,1009.20535" id="Path-16-Copy-12"></path>
+                        <path d="M538,381 L1709.29779,1049.20535" id="Path-16-Copy-31"></path>
+                        <path d="M611,342 L1782.29779,1010.20535" id="Path-16-Copy-30"></path>
+                        <path d="M538.135791,422.91673 L1745.80914,1112.52384" id="Path-16-Copy-13"></path>
+                        <path d="M538,505 L1451.99762,1025.14163" id="Path-16-Copy-14"></path>
+                        <path d="M538,543 L1451.99762,1063.14163" id="Path-16-Copy-33"></path>
+                        <path d="M611,506 L1524.99762,1026.14163" id="Path-16-Copy-32"></path>
+                        <path d="M538.135791,583.344066 L1991.7165,1411.95263" id="Path-16-Copy-15"></path>
+                        <path d="M405.367381,102.299293 L1988.07796,1005.34643" id="Path-16-Copy-10"></path>
+                        <path d="M1929.8897,1053.60687 L1988.12761,1018.06739" id="Path-15"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,117 @@
+/*!
+ * Bootstrap v4.0.0-alpha.6 (https://v4-alpha.getbootstrap.com/)
+ * Add into this file the variables that are going
+ * to be used by Bootstrap to delivery its grid and
+ * overall styles. A complete list of variables
+ * can be found within the bootstrap module at _sass/bootstrap
+ * within the _variables.scss file
+ * and also: (https://v4-alpha.getbootstrap.com/getting-started/options/)
+ */
+
+/**
+ * Body
+ */
+
+$body-color:                              $tundora;
+
+/**
+ * Spacing
+ */
+
+$spacer:                                  1rem;
+
+/**
+ * Fonts
+ */
+
+$font-family-sans-serif:                  $primary-font;
+$headings-font-family:                    $primary-font;
+$font-size-base:                          1rem;
+
+/**
+ * Links
+ */
+
+$link-color:                              $color--anchor-font;
+$link-hover-color:                        lighten($link-color, 10%);
+
+/**
+ * Headers
+ */
+
+$headings-color:                          $tundora;
+$font-size-h1:                            $font-size-base*2.75;
+$font-size-h2:                            $font-size-base*1.75;
+$font-size-h3:                            $font-size-base*1.375;
+$headings-font-weight:                    bold;
+$headings-margin-bottom:                  $spacer*1.5;
+
+/**
+ * Navs
+ */
+
+$nav-link-padding:                        0;
+$nav-item-margin:                         0;
+
+/**
+ * Buttons
+ */
+
+$btn-primary-bg:                          $shamrock-green;
+$btn-primary-border:                      transparent;
+$btn-primary-color:                       $white;
+
+$btn-secondary-bg:                        $white;
+$btn-secondary-border:                    $shamrock-green;
+$btn-secondary-color:                     $shamrock-green;
+
+$btn-font-weight:                         600;
+$btn-transition:                          all .15s ease-in-out;
+$btn-box-shadow:                          transparent;
+$btn-focus-box-shadow:                    transparent;
+$btn-active-box-shadow:                   transparent;
+$btn-padding-x:                           $spacer*.75;
+
+/**
+ * Blockquotes (This is the Font section in the _variables.scss bootstrap file)
+ */
+
+$blockquote-small-color:                    $gray;
+$blockquote-border-color:                   $tundora;
+$blockquote-border-width:                   1px;
+$blockquote-font-size:                      $font-size-base*1.625;
+
+/**
+ * Inputs
+ */
+
+$input-height:                            45px;
+$input-height-lg:                         $input-height;
+$input-height-sm:                         $input-height;
+$input-line-height:                       2.70;
+$input-padding-x:                         $spacer;
+$input-padding-x-sm:                      $input-padding-x;
+$input-padding-x-lg:                      $input-padding-x;
+$input-padding-y:                         0;
+$input-padding-y-sm:                      $input-padding-y;
+$input-padding-y-lg:                      $input-padding-y;
+$input-border-color:                      $alto;
+$input-color-focus:                       $tundora;
+$input-color-placeholder:                 $dusty-gray;
+$input-border-focus:                      $shamrock-green;
+$custom-select-focus-border-color:        $input-border-focus;
+$custom-select-indicator:                 url(/images/icon_arrow_down.svg);
+$custom-select-bg-size:                   10px 10px;
+$custom-select-sm-font-size:              $font-size-base;
+$custom-select-padding-x:                 $input-padding-x;
+$custom-select-color:                     $input-color-placeholder;
+$custom-select-padding-y:                 $input-padding-y;
+
+/**
+ * Misc.
+ */
+
+// For inputs, buttons, and other stuff
+$border-radius:                           2px;
+$border-radius-sm:                        $border-radius;
+$border-radius-lg:                        $border-radius;

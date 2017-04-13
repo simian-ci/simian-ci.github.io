@@ -1,0 +1,29 @@
+$size--quote-border-radius:                         8px;
+
+.quote {
+  &-blockquote {
+    border-radius: $size--quote-border-radius;
+    border: $blockquote-border-width solid $blockquote-border-color;
+    padding: $spacer*3 $spacer;
+  }
+
+  &-quote {
+    margin-bottom: $spacer*2.5;
+  }
+
+  &-title, &-note {
+    margin: 0;
+    font-size: $font-size-base*1.25;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &-blockquote {
+      padding: $spacer*2 $spacer;
+    }
+  }
+}
+
+// To prevent bootstrap default, which is a -
+.blockquote-footer::before {
+  content: '';
+}
