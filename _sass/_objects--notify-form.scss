@@ -1,7 +1,8 @@
-$size--form-width-medium:                        600px;
+$size--form-width-md:                        600px;
 $size--item-height:                              45px;
 
 .notify-form {
+  flex-grow: 1;
   margin: 0 auto;
 
   &-button {
@@ -43,7 +44,7 @@ $size--item-height:                              45px;
 
   @include media-breakpoint-up(md) {
     margin: 0;
-    width: $size--form-width-medium;
+    max-width: $size--form-width-md;
 
     &-item {
       padding-left: 0;
@@ -55,6 +56,19 @@ $size--item-height:                              45px;
       &:not(:first-child) {
         margin: 0;
       }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: $size--form-width-md;
+  }
+
+  // On small resolutions gutters should be off
+  @include media-breakpoint-down(sm) {
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }

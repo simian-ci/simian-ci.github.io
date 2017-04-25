@@ -26,15 +26,34 @@
 
   &-title {
     color: $shamrock-green;
-    margin: 0;
+    font-size: $font-size-base * 2.5;
+    line-height: 1.15;
+    margin-bottom: $spacer * 1.25;
   }
 
   &-subtitle {
-    font-size: $font-size-h3;
+    font-size: $font-size-base * 1.125;
+    line-height: 1.44;
+    margin-bottom: $spacer * 1.75;
+  }
+
+  @include media-breakpoint-up(md) {
+    &-title {
+      margin: 0;
+    }
+
+    &-subtitle {
+      font-size: $font-size-h3;
+      margin-bottom: $spacer;
+    }
   }
 
   @include media-breakpoint-up(lg) {
     background-image: url('/images/bgn_grid.svg');
+
+    &-title {
+      font-size: $font-size-h1;
+    }
 
     &-content {
       justify-content: center;

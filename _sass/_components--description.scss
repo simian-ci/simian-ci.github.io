@@ -1,24 +1,27 @@
 .description {
+  &-title {
+    font-size: $font-size-base * 1.375;
+    line-height: 1.36;
+  }
+
   &-text {
-    margin-bottom: $spacer*.75;
-    font-size: $size--paragraph-font;
+    margin-bottom: $spacer * 1.25;
+  }
+
+  @include media-breakpoint-up(md) {
+    &-title {
+      font-size: $font-size-base * 1.5;
+    }
   }
 
   @include media-breakpoint-up(lg) {
     &-title {
-      margin-bottom: $spacer*3;
+      margin-bottom: $spacer * 2.5;
     }
 
     &-text {
-      margin-bottom: $spacer*.25;
-
-      &--left {
-        margin-right: $spacer*.5;
-      }
-
-      &--right {
-        margin-left: $spacer*.5;
-      }
+      margin-bottom: $spacer * 2;
+      font-size: $size--paragraph-font;
     }
   }
 }

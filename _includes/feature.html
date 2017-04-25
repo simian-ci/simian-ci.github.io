@@ -1,0 +1,30 @@
+{% assign feature = include.feature %}
+{% assign inverse_class = "" %}
+{% assign inverse_content_class = "" %}
+{% assign image_inverse_class = "" %}
+
+{% if include.inverse == "inverse" %}
+  {% assign inverse_class = "feature--inverse" %}
+  {% assign inverse_content_class = "feature-content--inverse" %}
+  {% assign image_inverse_class = "feature-image--inverse" %}
+{% endif %}
+
+<article class="feature {{ inverse_class }} site-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-10">
+
+        <div class="row feature-content {{ inverse_content_class }} justify-content-center">
+          <div class="col-12 col-md-6 text-center text-md-left d-flex flex-column justify-content-center">
+            <h3 class="feature-title">{{ feature.title }}</h3>
+            <p class="feature-text">{{ feature.text }}</p>
+          </div>
+          <div class="col-12 col-md-6 feature-image {{ image_inverse_class }}">
+            <img class="img-fluid" src="/images/{{ feature.image }}" alt="{{ feature.title }}">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</article>
