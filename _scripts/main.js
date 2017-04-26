@@ -179,7 +179,7 @@ var SimianCI = {
       bulbDuration:                  840,
       bulbLoops:                     6,
       // This is not actually time, but frames
-      initialDrawingTime:            120,
+      initialDrawingTime:            100,
       wiresTime:                     1000
     };
 
