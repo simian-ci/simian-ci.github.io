@@ -1,21 +1,42 @@
+$size--image-lg:                                  378px;
+
 .test-infrastructure {
-  &-text {
-    font-size: $size--paragraph-font;
+  &-title {
+    font-size: $font-size-base * 1.75;
+    margin-bottom: $spacer * .75;
   }
 
   &-image {
+    align-self: center;
     margin-bottom: $spacer*2;
   }
 
   @include media-breakpoint-up(md) {
+    &-title {
+      font-size: $font-size-base * 1.875;
+    }
+
     &-image {
       margin: 0;
     }
   }
 
   @include media-breakpoint-up(lg) {
-    &-content {
-      margin-left: $spacer*2;
+    &-title {
+      font-size: $font-size-base * 2.375;
+    }
+
+    &-text {
+      font-size: $size--paragraph-font;
+    }
+
+    &-image {
+      width: $size--image-lg;
+    }
+
+    &-image-wrapper {
+      display: flex;
+      align-items: center;
     }
   }
 }

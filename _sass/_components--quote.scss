@@ -1,24 +1,60 @@
 $size--quote-border-radius:                         8px;
+$size--quote-padding-x:                             $spacer * 2.0625;
+$size--quote-padding-x-sm:                          $spacer * 1;
+$size--quote-font-weight:                           600;
+$size--blockquote-padding-y:                        $size--site-section-padding-y;
 
 .quote {
+  background-color: $alternate--color;
+
   &-blockquote {
-    border-radius: $size--quote-border-radius;
-    border: $blockquote-border-width solid $blockquote-border-color;
-    padding: $spacer*3 $spacer;
+    padding: 0 $size--quote-padding-x;
+    margin: 0 $spacer;
+  }
+
+  &-wrapper {
+    padding-top: $size--blockquote-padding-y;
+    padding-bottom: $size--blockquote-padding-y;
   }
 
   &-quote {
-    margin-bottom: $spacer*2.5;
+    font-weight: $size--quote-font-weight;
+    line-height: 1.25;
+    margin-bottom: $spacer * 2.5;
   }
 
   &-title, &-note {
+    font-size: $font-size-base * 1.25;
+    font-weight: $size--quote-font-weight;
     margin: 0;
-    font-size: $font-size-base*1.25;
+  }
+
+  &-title {
+    font-style: italic;
+  }
+
+  @include media-breakpoint-down(md) {
+    &-wrapper {
+      padding: 0;
+    }
   }
 
   @include media-breakpoint-down(sm) {
     &-blockquote {
-      padding: $spacer*2 $spacer;
+      padding: 0 $size--quote-padding-x-sm;
+    }
+
+    &-quote {
+      font-size: $font-size-base * 1.375;
+      margin-bottom: $spacer * 2;
+    }
+
+    &-title {
+      font-size: $font-size-base * 1.125;
+    }
+
+    &-note {
+      font-size: $font-size-base;
     }
   }
 }

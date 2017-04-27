@@ -10,9 +10,3 @@ features:
   - title: Slack and Zapier integration
     text: Using Webhooks, get notified of events in Slack or any other service through Zapier.
     image: icon_slack_zapier.svg
-
-active_classes:
-  feature: feature--active
-  feature-title: feature-title--active
-  feature-text: feature-text--active
-  features-image: features-image--active

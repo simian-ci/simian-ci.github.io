@@ -22,88 +22,14 @@ var SimianCI = {
     this.animatePage();
   },
 
-  options: {
-    timeToChangeSlide: 7000,
-  },
-
   animatePage: function() {
     var currentPath = window.location.pathname;
 
     switch(currentPath) {
       case '/':
         this.leadAnimation();
-        this.featuresSlider(this.options.timeToChangeSlide);
         break;
     }
-  },
-
-  /**
-   * Function to bind events related to the feature slider.
-   *
-   * @method featuresSlider
-   * @param  {Number}  sliderTime  - time to automatically change slide
-   *
-   */
-  featuresSlider: function(sliderTime) {
-    var activeFeature = $('.feature--active');
-    var featuresContainer = $('.features-container');
-    // This timer will reset when the user clicks
-    var autoSlideTimer = new this.Timer(getNextFeature, sliderTime);
-
-    // Only exposing this method in case is needed
-    function getNextFeature(nextFeature) {
-      if (typeof nextFeature === 'undefined') {
-        nextFeature = activeFeature.next();
-        nextFeature = nextFeature.length ? nextFeature : getFirstFeature();
-      }
-
-      disableFeature(activeFeature);
-      activateFeature(nextFeature);
-      activeFeature = nextFeature;
-    };
-
-    function getFirstFeature() {
-      return $('.feature').first();
-    };
-
-    function activateFeature(feature) {
-      var index = feature.index();
-
-      feature.addClass('feature--active');
-      feature.find('.feature-title').addClass('feature-title--active');
-      feature.find('.feature-text').addClass('feature-text--active');
-
-      var image = $('.features-image').eq(index);
-      image.addClass('features-image--active');
-    };
-
-    function disableFeature(feature) {
-      var index = feature.index();
-
-      feature.removeClass('feature--active');
-      feature.find('.feature-title').removeClass('feature-title--active');
-      feature.find('.feature-text').removeClass('feature-text--active');
-
-      var image = $('.features-image').eq(index);
-      image.removeClass('features-image--active');
-    };
-
-    // Using event delegation
-    featuresContainer.on('click', function(event) {
-      var target = $(event.target);
-      var feature;
-
-      autoSlideTimer.resetTimer();
-
-      var isFeature = target.hasClass('feature') ||
-        target.hasClass('feature-title') || target.hasClass('feature-text');
-
-      if (isFeature) {
-        feature = target.closest('.feature');
-      }
-
-      getNextFeature(feature);
-    });
   },
 
   // Binds scroll events related to the navbar (when user scrolls and alt navbar appears)
@@ -179,7 +105,7 @@ var SimianCI = {
       bulbDuration:                  840,
       bulbLoops:                     6,
       // This is not actually time, but frames
-      initialDrawingTime:            100,
+      initialDrawingTime:            120,
       wiresTime:                     1000
     };
 

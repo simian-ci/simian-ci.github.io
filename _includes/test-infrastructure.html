@@ -2,16 +2,15 @@
 
 <section class="test-infrastructure site-section" id="test-infrastructure">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
 
-      <div class="col-12 col-md-6 col-lg-4 offset-lg-2 text-center">
+      <div class="col-12 col-md-5 col-lg-5 test-infrastructure-image-wrapper text-center">
         <img class="test-infrastructure-image img-fluid"
           src="/images/{{ section.image }}"
-          srcset="{% include retina.html image = section.image_name %}"
           alt="{{ section.title }}">
       </div>
 
-      <div class="test-infrastructure-content col-12 col-md-6 col-lg-4 text-center text-md-left d-flex flex-column justify-content-center">
+      <div class="test-infrastructure-content col-12 col-md-5 col-lg-5 text-center text-md-left d-flex flex-column justify-content-center">
         <h2 class="test-infrastructure-title">{{ section.title }}</h2>
         <p class="test-infrastructure-text">{{ section.text }}</p>
       </div>

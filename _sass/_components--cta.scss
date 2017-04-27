@@ -1,3 +1,33 @@
+$size--background-sm:                          1500px;
+$size--background-lg:                          cover;
+
 .cta {
-  background-color: $alabaster;
+  background: {
+    color: $tundora;
+    image: url(/images/bgn_cta.svg);
+    repeat: repeat-y;
+    size: $size--background-sm;
+  }
+
+  &-title {
+    color: $white;
+    font-size: $font-size-base * 1.75;
+    margin-bottom: $spacer * 1.5;
+  }
+
+  @include media-breakpoint-up(md) {
+    &-title {
+      font-size: $font-size-base * 1.875;
+      margin-bottom: $spacer * 2;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: $size--background-lg;
+
+    &-title {
+      font-size: $font-size-base * 2.25;
+      margin-bottom: $spacer * 3;
+    }
+  }
 }
